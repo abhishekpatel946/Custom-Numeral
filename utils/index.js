@@ -1,6 +1,6 @@
-import { GLOBALS } from './globals.js';
+/* eslint-disable no-undef */
 
-export const nFormatter = (num, digits = GLOBALS.DIGITS_AFTER_DECIMAL) => {
+const nFormatter = ({ num, digits }) => {
   // Support currencies upto
   const lookup = [
     { value: 1, symbol: '' },
@@ -24,4 +24,21 @@ export const nFormatter = (num, digits = GLOBALS.DIGITS_AFTER_DECIMAL) => {
     : num > 0
     ? Number(num).toFixed(digits)
     : '0';
+};
+
+const getIndexOf = (strArr) => {
+  let firstIndexOf;
+
+  // return the first index of the string
+  for (let i = 0; i < strArr.length; i++) {
+    if (strArr[i] !== '0' && strArr[i] !== '.') {
+      firstIndexOf = strArr.indexOf(strArr[i]);
+      return firstIndexOf;
+    }
+  }
+};
+
+module.exports = {
+  nFormatter,
+  getIndexOf,
 };
