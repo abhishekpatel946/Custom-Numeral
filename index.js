@@ -1,7 +1,47 @@
-/* eslint-disable no-undef */
-import { GLOBALS } from './utils/globals';
-import { getIndexOf } from './utils/getIndexOf';
-import { nFormatter } from './utils/nFormatter';
+// import { GLOBALS } from './utils/globals';
+// import getIndexOf from './utils/getFirstIndexOf';
+// import nFormatter from './utils/nFormatter';
+
+export const getIndexOf = (strArr) => {
+  let firstIndexOf;
+
+  // return the first index of the string
+  for (let i = 0; i < strArr.length; i++) {
+    if (strArr[i] !== '0' && strArr[i] !== '.') {
+      firstIndexOf = strArr.indexOf(strArr[i]);
+      return firstIndexOf;
+    }
+  }
+};
+
+export const GLOBALS = {};
+GLOBALS.DIGITS_AFTER_DECIMAL = 2;
+
+export const nFormatter = (num, digits = GLOBALS.DIGITS_AFTER_DECIMAL) => {
+  // Support currencies upto
+  const lookup = [
+    { value: 1, symbol: '' },
+    { value: 1e3, symbol: 'K' },
+    { value: 1e6, symbol: 'M' },
+    { value: 1e9, symbol: 'B' },
+    { value: 1e12, symbol: 'T' },
+  ];
+  const rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
+  var item = lookup
+    .slice()
+    .reverse()
+    .find(function (item) {
+      return num >= item.value;
+    });
+
+  return item
+    ? Number(
+        (num / item.value).toFixed(digits).replace(rx, '$1')
+      ).toLocaleString() + item.symbol
+    : num > 0
+    ? Number(num).toFixed(digits)
+    : '0';
+};
 
 // Custom Numeral handler function
 const customNumeral = (value) => {
@@ -61,4 +101,4 @@ const customNumeral = (value) => {
   }
 };
 
-module.exports = customNumeral;
+export default customNumeral;

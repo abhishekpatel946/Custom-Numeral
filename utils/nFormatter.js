@@ -1,4 +1,4 @@
-import { GLOBALS } from './globals';
+import { GLOBALS } from './globals.js';
 
 export const nFormatter = (num, digits = GLOBALS.DIGITS_AFTER_DECIMAL) => {
   // Support currencies upto
