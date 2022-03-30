@@ -1,0 +1,3 @@
+export const GLOBALS = {};
+
+GLOBALS.DIGITS_AFTER_DECIMAL = 2;

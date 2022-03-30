@@ -1,0 +1,11 @@
+{
+  "name": "custom-numeral",
+  "version": "1.0.0",
+  "description": "A javascript library for formatting and manipulating numbers fully custmizable.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abhishekpatel946",
+  "license": "ISC"
+}
