@@ -4,8 +4,16 @@
   "description": "A javascript library for formatting and manipulating numbers fully custmizable.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "run lint && npm run test:run",
+    "test:run": "jest"
   },
   "author": "abhishekpatel946",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "husky": "^7.0.0"
+  }
 }

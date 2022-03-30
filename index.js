@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { GLOBALS } from './utils/globals';
 import { getIndexOf } from './utils/getIndexOf';
 import { nFormatter } from './utils/nFormatter';

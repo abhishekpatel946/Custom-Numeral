@@ -1,3 +1,5 @@
+import { GLOBALS } from './globals';
+
 export const nFormatter = (num, digits = GLOBALS.DIGITS_AFTER_DECIMAL) => {
   // Support currencies upto
   const lookup = [
