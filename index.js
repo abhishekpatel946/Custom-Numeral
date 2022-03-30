@@ -62,5 +62,3 @@ const customNumeral = ({ value, digits = 2 }) => {
 module.exports = {
   customNumeral,
 };
-
-console.log(customNumeral({ value: '1.009134364800123456789000', digits: 5 }));
