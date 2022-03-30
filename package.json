@@ -3,14 +3,38 @@
   "version": "1.3.0",
   "description": "A javascript library for formatting and manipulating numbers fully custmizable.",
   "main": "index.js",
-  "author": "abhishekpatel946",
+  "author": {
+    "name": "Abhishek Patel",
+    "email": "abhishekpatel946@gmail.com",
+    "url": "http://github.com/abhishekpatel946"
+  },
+  "keywords": [
+    "numeral",
+    "number",
+    "format",
+    "time",
+    "money",
+    "percentage",
+    "custom-numeral", 
+    "bignumber", 
+    "numeral",
+    "bignumbers", 
+    "bigjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhishekpatel946/Custom-Numeral"
+  },
+  "bugs": {
+    "url": "https://github.com/abhishekpatel946/Custom-Numeral/issues"
+  },
   "scripts": {
     "prepare": "husky install",
     "lint": "eslint --fix --ext .js",
     "lint:fix": "npm run lint -- --fix",
     "test": "npm run lint"
   },
-  "license": "ISC",
+  "license": " Apache-2.0 License",
   "devDependencies": {
     "eslint": "^8.12.0",
     "husky": "^7.0.0"
