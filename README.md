@@ -1,10 +1,20 @@
 # Custom Numeral
 
+![NodeJS Workflow](https://github.com/abhishekpatel946/Custom-Numeral/actions/workflows/nodejs.yml/badge.svg)
+[![GitHub release](https://img.shields.io/static/v1?label=Release&message=Beta&color=blue)](https://github.com/abhishekpatel946/Custom-Numeral/releases/)
+[![repo size](https://img.shields.io/github/repo-size/abhishekpatel946/Custom-Numeral.svg)](https://github.com/abhishekpatel946/Custom-Numeral/archive/master.zip)
+[![Open Source? Yes](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/abhishekpatel946/)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=abhishekpatel946/Custom-Numeral.abhishekpatel946/Custom-Numeral?color=2bbc8a)
+[![Apache GNU](https://img.shields.io/github/license/abhishekpatel946/Custom-Numeral.svg)](https://github.com/abhishekpatel946/Custom-Numeral/blob/main/LICENSE)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/abhishekpatel946/Custom-Numeral/discussions)
+
+
 A javascript library for formatting and manipulating numbers fully custmizable.
 
 ## Description
 
 An in-depth paragraph about your project and overview of use.
+
 
 ## Getting Started
 
