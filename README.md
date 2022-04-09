@@ -38,6 +38,8 @@ npm i custom-numeral
 
 ```javascript
 const customNumeral = require("custom-numeral")
+                  OR
+import customNumeral from 'custom-numeral'
 ```
 
 * How to handle big-numbers in javascript.
